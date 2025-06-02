@@ -244,7 +244,7 @@ With this project, we successfully addressed the problem of detecting duplicate 
 
 The importance of combining multiple feature types to detect question similarity as accurately as possible is the key takeaway from this project. We started with simple textual features, which were informative, and then incorporated semantic features as well, which were necessary for handling nuanced differences between the questions. 
 
-Improvement Recommendations 
+Improvement Recommendations
 
 Explore Advanced Embedding Techniques: Sentence-BERT proved effective, but experimenting with newer transformer models like RoBERTa, DistilBERT, or embeddings from LLMs (Large Language Models) could enhance the performance of the model and its ability to capture nuanced relationships. 
 
