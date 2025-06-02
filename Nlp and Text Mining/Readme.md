@@ -108,7 +108,7 @@ A robust pipeline was employed for model training and evaluation to ensure accur
 
 1. Data Splitting 
 
-We divided the dataset into training and testing sets, using a 70% - 30% spit ratio. To ensure stratification and maintain the balance of the target variable. 
+We divided the dataset into training and testing sets, using a 80% - 20% spit ratio. To ensure stratification and maintain the balance of the target variable. 
 
 2. TF-IDF Vectorization 
 
@@ -225,6 +225,14 @@ MLPClassifier: Achieved a good balance between accuracy (82%) and F1 score (76%)
 XGBoost: The top performer with 82% accuracy and 77% F1 score. The model’s ensemble nature and non-linear modeling capabilities were crucial in capturing subtle similarities between questions. Hyperparameter tuning significantly boosted its performance. 
 
 BM25: Best Matching 25 (BM25) is a ranking function. It is used widely in information retrieval, particularly in search engines, to show how relevant a document is to a given query. In the context of question similarity detection, BM25 can measure the lexical relevance between two questions. This is done by treating one as a query and the other as a document. This model can handle varied question lengths and term frequencies by using term saturation and document length optimization. However, BM25 does not capture semantic meaning like neural models or embeddings. We experimented with this model as well, but it was excluded due to its computational inefficiency, taking approximately one second per iteration, making it impractical for large-scale datasets, like the one we are using from Quora. Compared to the other models used in this project, it lacked the scalability and speed required for efficient training, despite its strong lexical matching capabilities. 
+
+Feature Importance 
+
+To better understand the contribution of each feature to the model’s predictions, we examined the feature importance scores. As shown in the figure below, semantic similarity was by far the most important feature in predicting duplicate questions, followed by the percentage of common words and cosine similarity. 
+
+Identification of Likely Misclassified Duplicate Pairs 
+
+During our post training evaluation, we observed that a subset of question pairs are marked as not duplicates even though they exhibit high confidence that these are duplicate questions (confidence more than 0,70). These cases suggest that they may have been incorrectly labeled in the dataset. We identified 3,659 such cases out of a total of 80.558 (the test set) question pairs in the dataset. This is the 22% of test set, which ultimately affects the model’s evaluation by a large margin.
 
 Challenges and Insights 
 
