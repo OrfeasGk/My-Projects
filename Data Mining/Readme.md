@@ -1,3 +1,7 @@
+Students: Orfeas Ilias Gkonis , ogkonis@ihu.edu.gr \
+Nikolaos Laoutaris , nlaoutaris@ihu.edu.gr \
+Vasileios Kesopoulos, vkesopoulos@ihu.edu.gr \
+Georgios Chrysovelidis, gchrysovelidis@ihu.edu.gr \
 Objective \
 The aim of this project is to explore data mining methodologies,concepts and algorithms in a healthcare dataset in order to discover patterns and extract knowledge from it.
 
