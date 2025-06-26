@@ -1,3 +1,6 @@
+Students:Orfeas Ilias Gkonis, ogkonis@ihu.edu.gr \
+Nikolaos Laoutaris , nlaoutaris@ihu.edu.gr \
+Vasileios Kesopoulos, vkesopoulos@ihu.edu.gr \
 ABSTRACT \
 Image classification is a complex process that may be affected by many factors. This report examines current practices, problems, and prospects of food image classification. Non-parametric classifiers such as neural networks have become increasingly popular in image classification problems, that said we implemented many different pretrained models with different architectures in-order to solve a multi label classification problem through a competition in Kaggle. Finally, we have also summarized the main analysis and discussion in this article, as well as introducing some of the current trends.\
 DATA AND PROBLEM DESCRIPTION \
